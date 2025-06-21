@@ -1,0 +1,39 @@
+# --- COLD-contracts gitignore ---
+# Node & package manager artefacts
+node_modules/
+.npm/
+package-lock.json
+npm-debug.log*
+
+# Hardhat build artefacts
+artifacts/
+cache/
+coverage/
+build-info/
+
+# Hardhat network snapshots
+*.db
+*.sqlite
+
+# Circom build artefacts
+circuits/**/*.r1cs
+circuits/**/*.wasm
+circuits/**/*.zkey
+
+# Generated verifier contracts (can always be re-generated)
+contracts/Verifier.sol
+
+# Environment & secrets
+.env
+.env.*
+
+# IDE / OS
+.DS_Store
+.idea/
+.vscode/
+
+# Logs
+*.log
+
+# Ignore compiled typescript if present
+*.tsbuildinfo 
